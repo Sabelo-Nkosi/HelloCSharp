@@ -4,7 +4,7 @@ steps:
     args:
       - 'build'
       - "-t"
-      - 'gcr.io/candidates/src-helloCsharp-$BRANCH_NAME:$COMMIT_SHA'
+      - 'gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA'
       - '-f'
       - 'HelloCSharp/Dockerfile'
       - '.'
@@ -12,7 +12,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
-      - 'gcr.io/candidates/src-helloCsharp-$BRANCH_NAME:$COMMIT_SHA'
+      - 'gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA'
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
@@ -21,10 +21,11 @@ steps:
       - 'deploy'
       - 'srv-helloCsharp'
       - '--image'
-      - 'gcr.io/candidates/src-helloCsharp-$BRANCH_NAME:$COMMIT_SHA'
+      - 'gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA'
       - '--port'
       - '8982'
       - '--region'
       - 'europe-west1'
 images:
-  - gcr.io/candidates/src-helloCsharp-$BRANCH_NAME:$COMMIT_SHA
+  - gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA
+    
