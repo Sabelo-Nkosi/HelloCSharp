@@ -1,6 +1,6 @@
 # Build the container image
 steps:
-  - name: 'gcr.io/cloud-builders/docker2'
+  - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'build'
       - "-t"
@@ -9,12 +9,12 @@ steps:
       - 'Dockerfile'
       - '.'
   # Push the container image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker2'
+  - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'push'
       - 'gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA'
   # Deploy container image to Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk2'
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
       - 'run'
