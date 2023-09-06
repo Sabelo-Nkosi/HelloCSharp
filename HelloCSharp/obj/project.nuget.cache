@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BTT0t74pZAZzQT8zhAtt7Jw/htoUE7f0Xo6qELbfJrTnpliYDjqZ7M/5xpFsG2QLnRVAA1EjjoK6W+76UO3c3w==",
+  "dgSpecHash": "NfYJwUtd0e4/1jz5gc3xQEHJpsV9ppOCPs0O+omtL0CFA/2gr8urW7/UvISphLfyWOs51x6XVjZTSaB3bigHHQ==",
   "success": true,
-  "projectFilePath": "/Users/sabelo/RiderProjects/HelloCSharp/HelloCSharp/HelloCSharp.csproj",
+  "projectFilePath": "C:\\Users\\sabelon\\RiderProjects\\HelloCSharp\\HelloCSharp\\HelloCSharp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

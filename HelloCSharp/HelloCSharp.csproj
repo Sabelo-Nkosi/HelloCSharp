@@ -11,6 +11,23 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Remove="obj\Debug\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="obj\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="obj\Debug\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="obj\Debug\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="obj\Debug\**" />
     </ItemGroup>
 
 </Project>

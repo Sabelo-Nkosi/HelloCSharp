@@ -22,8 +22,6 @@ steps:
       - 'srv-hellocsharp'
       - '--image'
       - 'gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA'
-      - '--port'
-      - '8982'
       - '--region'
       - 'europe-west1'
 images:
