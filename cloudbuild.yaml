@@ -6,7 +6,7 @@ steps:
       - "-t"
       - 'gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA'
       - '-f'
-      - 'Dockerfile'
+      - 'HelloCSharp/Dockerfile'
       - '.'
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
