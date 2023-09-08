@@ -1,0 +1,10 @@
+﻿services:
+  hellocsharp:
+    image: hellocsharp
+    build:
+      context: .
+      dockerfile: HelloCSharp/Dockerfile
+    expose:
+      - 80
+      - 5033
+      - 8982

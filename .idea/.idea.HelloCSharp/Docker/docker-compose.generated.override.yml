@@ -1,0 +1,24 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  hellocsharp:
+    build:
+      context: "C:\\Users\\sabelon\\RiderProjects\\HelloCSharp"
+      dockerfile: "HelloCSharp/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/HelloCSharp.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net7.0/HelloCSharp.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+      NUGET_PACKAGES: "C:\\Users\\sabelon\\.nuget\\packages"
+      NUGET_FALLBACK_PACKAGES: "C:\\Users\\sabelon\\.nuget\\packages"
+    image: "hellocsharp:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\sabelon\\.nuget\\packages:/root/.nuget/fallbackpackages"
+    - "C:\\Users\\sabelon\\RiderProjects\\HelloCSharp\\HelloCSharp:/app:rw"
+    - "C:\\Users\\sabelon\\RiderProjects\\HelloCSharp:/src:rw"
+    working_dir: "/app"
