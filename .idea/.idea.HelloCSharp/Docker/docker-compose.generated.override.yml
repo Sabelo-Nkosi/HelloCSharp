@@ -15,7 +15,7 @@ services:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
       NUGET_PACKAGES: "C:\\Users\\sabelon\\.nuget\\packages"
       NUGET_FALLBACK_PACKAGES: "C:\\Users\\sabelon\\.nuget\\packages"
-    image: "hellocsharp:dev"
+    image: "gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:dev"
     ports: []
     volumes:
     - "C:\\Users\\sabelon\\.nuget\\packages:/root/.nuget/fallbackpackages"

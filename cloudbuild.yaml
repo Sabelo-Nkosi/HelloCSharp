@@ -3,6 +3,13 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args:
       - 'compose'
+      - "-f"
+      - 'docker-compose.yml'
+      - "-p"
+      - "hellosharp"
+      - "up"
+      - "-d"
+      - "hellosharp"
       - 'build'
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
