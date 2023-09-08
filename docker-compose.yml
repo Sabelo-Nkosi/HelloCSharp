@@ -1,6 +1,6 @@
 ﻿services:
   hellocsharp:
-    image: hellocsharp
+    image: gcr.io/scoreboard-poc/github.com/sabelo-nkosi/hellocsharp:$COMMIT_SHA
     build:
       context: .
       dockerfile: HelloCSharp/Dockerfile
